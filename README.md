@@ -1,13 +1,48 @@
-# React + Vite
+# Attendance App 📋  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Attendance App** is a simple web-based system to record and manage student attendance securely.  
+It uses **Firebase Authentication** for login and **Firestore Database** for storing attendance data.  
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🔑 Secure login & authentication with Firebase  
+- 🧑‍🎓 Student attendance marking system  
+- 📊 Real-time attendance data stored in Firestore  
+- 📅 Daily and monthly attendance tracking  
+- 👨‍🏫 Teacher/Admin dashboard to view records  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# attendance-app
+## 📂 Project Structure
+attendance-app/
+│
+├── public/                     # Static assets (favicon, index.html, etc.)
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/                        # Main source code
+│   ├── assets/                 # Images, CSS, etc.
+│   │   └── logo.png
+│   │
+│   ├── components/             # Reusable React components
+│   │   ├── AttendanceForm.jsx
+│   │   ├── Dashboard.jsx
+│   │   └── Navbar.jsx
+│   │
+│   ├── config/                 # Firebase configuration
+│   │   └── firebase.js
+│   │
+│   ├── routes/                 # Protected routes & navigation
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── pages/                  # App pages
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── AttendancePage.jsx
+│   │   └── Home.jsx
+│   │
+│   ├── App.js                  # Main App component
+│   ├── index.js                # React entry point
+│   └── styles.css              # Global styles
+│
+├── .gitignore                  # Ignored files for Git
+├── package.json                # Dependencies & scripts
+├── README.md                   # Project documentation
+└── vite.config.js / webpack.config.js  # Build configuration (depends on setup)
